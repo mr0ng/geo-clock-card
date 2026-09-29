@@ -1,7 +1,9 @@
 # Local verification record
 
-Date: 2026-09-27. Branch: `codex/windows-offline-app`. This record describes the
-locally verified Windows build prepared for contribution.
+Build verified: 2026-09-27. Release record corrected: 2026-09-28.
+This record describes the published `windows-v0.1.1` build from source commit
+`793b8c76727d6b2364ee597791dfb61cb75436ad`. Later documentation and line-ending
+changes on `codex/windows-offline-app` do not change that published build.
 
 ## Build
 
@@ -10,13 +12,18 @@ locally verified Windows build prepared for contribution.
 - Builder host: Windows 10 x64, OS build 19045; Node 24.19.0, npm 11.17.0.
 - Pinned development dependencies: Electron 44.4.5, electron-builder 26.15.3.
 - Packaged runtime: Electron 44.4.5, Chromium 152.0.7977.130, Node 24.21.0.
-- Output: `desktop/release/GeoClock-Offline-0.1.1-win-x64.exe` and
-  `desktop/release/win-unpacked/`. Both are excluded from Git.
+- Published assets: `GeoClock-Offline-0.1.1-win-x64.exe` and `SHA256SUMS.txt` in
+  [Windows v0.1.1](https://github.com/mr0ng/geo-clock-card/releases/tag/windows-v0.1.1).
+- The published rebuild was generated under `desktop/release/candidate/`,
+  with `win-unpacked/` alongside the EXE. Build output is excluded from Git.
 - Signing: unsigned; default Electron icon. No signing identity or personal
   publisher information was used.
-- Final portable EXE: 112,317,175 bytes (107.1 MiB).
-- The release's `SHA256SUMS.txt` records the final EXE checksum. The earlier
-  candidate was rebuilt after the Remember and About fixes.
+- Published portable EXE: 112,315,114 bytes (107.1 MiB).
+- SHA-256: `bd119f53de3f6803e12ae8ae0a80bf00fb79be14f148b35f55ac8b96d941c727`.
+- The EXE size and SHA-256 match GitHub's release asset metadata, the published
+  `SHA256SUMS.txt`, and the locally retained EXE. An earlier draft candidate was
+  rebuilt after the Remember and About fixes; its size had been left in this
+  record by mistake. This correction leaves the published tag and EXE intact.
 
 ## Passing checks
 

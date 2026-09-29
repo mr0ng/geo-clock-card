@@ -7,8 +7,8 @@ external sites are blocked. There is no telemetry, update service or startup tas
 ## Run
 
 Download `GeoClock-Offline-0.1.1-win-x64.exe` from the
-[Windows releases](https://github.com/mr0ng/geo-clock-card/releases) when a
-release is published, or build it locally using the instructions below. A local
+[Windows v0.1.1 release](https://github.com/mr0ng/geo-clock-card/releases/tag/windows-v0.1.1),
+or build it locally using the instructions below. A local
 build places the EXE under `desktop/release/`. Double-click the EXE to run it.
 No installation of Node, Git, Python, WebView2, Home Assistant or a browser is needed
 to run the downloaded build.

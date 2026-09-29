@@ -1,0 +1,11 @@
+# Keep desktop sources consistent across Windows and other checkouts.
+desktop/** text=auto eol=lf
+
+# These upstream text files are copied directly into the desktop package.
+docs/web/geoclock-config.js text eol=lf
+docs/web/geoclock-webconfig.js text eol=lf
+docs/web/geoclock-planner.js text eol=lf
+dist/geo-clock-card.js text eol=lf
+dist/timezones.json text eol=lf
+dist/timezones-iana.json text eol=lf
+LICENSE text eol=lf
